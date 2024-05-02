@@ -1,0 +1,9 @@
+name = "cloudflare-rs-vitest"
+
+main = "build/worker/shim.mjs"
+
+compatibility_date = "2024-04-19"
+compatibility_flags = ["nodejs_compat"]
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
